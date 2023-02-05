@@ -7,7 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      montserrat: ['var(--font-montserrat)'],
+      fontFamily: {
+        cabin: ['var(--font-cabin)'],
+        sans: 'open-sans, sans-serif',
+      }
     },
   },
   plugins: [],
