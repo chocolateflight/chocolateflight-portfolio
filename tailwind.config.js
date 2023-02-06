@@ -10,8 +10,8 @@ module.exports = {
       fontFamily: {
         cabin: ['var(--font-cabin)'],
         sans: 'open-sans, sans-serif',
-      }
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-hyphens')],
 };
