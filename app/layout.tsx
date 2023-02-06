@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className='md:hidden h-full'>
           <Top small={true} />
 
-          <div className={`${cabin.className} py-[95px] h-full px-[10%]`}>
+          <div className={`${cabin.className} min-h-full flex py-[95px] px-[10%]`}>
             {children}
           </div>
 
@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className='hidden md:block h-full'>
           <Top small={false} />
 
-          <div className={`${cabin.className} py-[150px] h-full px-[20%]`}>
+          <div className={`${cabin.className} py-[150px] h-full px-[10%]`}>
             {children}
           </div>
 

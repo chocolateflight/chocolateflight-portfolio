@@ -1,36 +1,27 @@
+/* eslint-disable react/no-unescaped-entities */
+
+'use client';
+
 import Image from 'next/image';
 import portrait from '../public/images/portrait.jpg';
 
 export default function Home() {
   return (
-    <main className='h-full'>
-      <div className='flex flex-col items-center h-full'>
-        <Image src={portrait} alt='Portrait' className='w-[200px] rounded-full' />
-        <h1 className='text-2xl text-white'>Hello next 13</h1>
-        <p className='text-white'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quis recusandae?
-          Ipsam maxime accusamus reprehenderit omnis possimus, expedita vel iste quo
-          modi? Temporibus, commodi esse aspernatur explicabo architecto culpa est. Animi
-          delectus ratione incidunt adipisci deleniti corporis error distinctio, odio
-          ipsa dolore nisi pariatur eum porro repudiandae perferendis maxime nesciunt
-          esse sequi, reprehenderit aperiam? Atque neque similique veniam fuga quis.
-          Quisquam odio cumque mollitia nesciunt voluptatibus quae quam unde beatae eum
-          officia voluptatem, quod placeat? Repellendus aliquam ad deserunt eaque tempore
-          cum, veritatis placeat recusandae magnam, quia facilis, molestiae est.
-          Recusandae expedita reprehenderit incidunt error! Esse obcaecati totam corrupti
-          repellendus quis vel laudantium temporibus atque maiores? Laborum ea tempora
-          accusantium pariatur inventore non minima, reiciendis similique amet
-          praesentium, repudiandae iste. Soluta ad corrupti laborum dolores facere,
-          doloremque vel magnam amet delectus a accusantium libero aliquid recusandae
-          fuga tenetur tempora sunt qui atque? Enim, aliquam quia quaerat nesciunt quam
-          nihil hic. Nostrum suscipit quis nisi quae vel qui dignissimos animi blanditiis
-          nam ipsa pariatur error consequatur cumque, doloremque sit! Nesciunt vero
-          asperiores eaque praesentium reprehenderit totam, minus hic nisi eum ipsa!
-          Laboriosam aliquam nostrum cupiditate explicabo temporibus dolor dicta pariatur
-          quia libero adipisci id voluptas molestias veritatis at modi reiciendis,
-          aliquid laudantium exercitationem dolores nihil autem a totam architecto!
-          Animi, similique.
-        </p>
+    <main className='md:h-full'>
+      <div className='h-full flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center gap-4 overflow-visible md:flex-row md:max-w-[1100px]'>
+          <div className='flex flex-col items-center gap-4 md:justify-center'>
+            <Image
+              src={portrait}
+              alt='Portrait'
+              className='w-[180px] mt-4 rounded-full md:min-w-[300px]'
+            />
+            <h1 className='text-2xl text-white text-center'>Welcome to my website!</h1>
+          </div>
+          <p className='text-white text-justify text-[14px] break-words hyphens-auto md:mb-0 md:text-[16px]'>
+          Hello and welcome! My name is Marc Hostettler and I am a 25-year-old Business Administration student and Organizational Development intern. With 9 years of experience in various business roles, I have developed a passion for continuous learning and growth. Recently, I have been teaching myself Web Development and am eager to apply my newfound skills and gain practical experiences. Have a look around my site to see my CV and some of my recent projects. Let's connect!
+          </p>
+        </div>
       </div>
     </main>
   );
