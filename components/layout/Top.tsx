@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import { Work_Sans } from '@next/font/google';
 
+import Menu from '../menu/Menu';
+
 import threelines from '../../public/icons/threelines.png';
 import logo_b from '../../public/icons/logo_b.png';
 
@@ -25,7 +27,7 @@ export default function Top(props: Props) {
   let polyText = props.small ? 'text-lg' : 'text-3xl';
 
   return (
-    <div className={`fixed top-0 left-0 right-0 w-full ${polyHeight}`}>
+    <nav className={`fixed top-0 left-0 right-0 w-full ${polyHeight}`}>
       <svg
         className='absolute top-0 w-full h-full'
         viewBox='0 0 100 100'
@@ -44,6 +46,7 @@ export default function Top(props: Props) {
         <Image src={logo_b} alt='Logo' className={`${logoWidth} object-contain`} />
         <p className={`${workSans.className} ${polyText} font-[700]`}>Marc Hostettler</p>
       </div>
-    </div>
+      <Menu />
+    </nav>
   );
 }
