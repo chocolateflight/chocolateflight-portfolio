@@ -17,7 +17,7 @@ export default function Home() {
               className='w-[180px] mt-4 rounded-full md:min-w-[300px]'
             />
           </div>
-          <div className='flex flex-col items-start gap-2'>
+          <div className='flex flex-col gap-2 md:items-start'>
             <h1 className='text-2xl text-white text-center'>Welcome to my website!</h1>
             <p className='text-white text-justify text-[14px] break-words hyphens-auto md:mb-0 md:text-[16px]'>
               Hello and welcome! My name is Marc Hostettler and I am a 25-year-old
