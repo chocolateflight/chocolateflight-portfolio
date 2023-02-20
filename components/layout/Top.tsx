@@ -45,12 +45,15 @@ export default function Top(props: Props) {
         <polygon fill='#FFFFFF' points={`${polyPoint}`} />
       </svg>
 
-      <Image
-        src={threelines}
-        alt='Three Lines'
-        className={`absolute top-0 bottom-0 right-5 my-auto mx-0 cursor-pointer ${polyPad} ${polyWidth}`}
-        onClick={toggleMenu}
-      />
+      <div
+        className={`${polyPad} flex flex-col justify-center absolute top-0 bottom-0 right-5`}>
+        <Image
+          src={threelines}
+          alt='Three Lines'
+          className={`cursor-pointer ${polyWidth} hover:scale-110`}
+          onClick={toggleMenu}
+        />
+      </div>
 
       <div
         className={`flex justify-center items-center absolute top-0 bottom-0 left-2 my-auto mx-0 ${polyPad} ${polyHeight}`}>
