@@ -22,7 +22,7 @@ export default function Modal(props: Props) {
           contact me via LinkedIn.
         </p>
         <span
-          className='border-2 p-3 rounded-lg bg-black text-white'
+          className='cursor-pointer border-2 p-3 rounded-lg bg-black text-white hover:bg-gray-800'
           onClick={closeModal}>
           CLOSE MODAL
         </span>
