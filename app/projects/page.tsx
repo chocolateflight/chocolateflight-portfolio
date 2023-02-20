@@ -5,8 +5,6 @@ import { Work_Sans } from '@next/font/google';
 
 import projects from '@/resources/projects/projects';
 
-import tictac from '../../public/images/tic-tac-toe.png';
-
 const workSans = Work_Sans({
   weight: ['400', '700'],
   subsets: ['latin'],
