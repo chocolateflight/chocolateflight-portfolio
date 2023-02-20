@@ -93,7 +93,7 @@ export default function Contact() {
               <div className='italic text-xs'>{formik.errors.message}</div>
             ) : null}
             <br />
-            <button className='border-2 rounded-lg p-2' type='submit'>
+            <button className='border-2 rounded-lg p-2 hover:bg-white hover:text-black' type='submit'>
               Submit
             </button>
           </form>
