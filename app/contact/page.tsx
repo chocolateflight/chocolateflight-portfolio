@@ -82,8 +82,11 @@ export default function Contact() {
             <textarea
               name='message'
               id='message'
+              // @ts-ignore
               rows='5'
+              // @ts-ignore
               minLength='25'
+              // @ts-ignore
               maxLength='1000'
               required
               onChange={formik.handleChange}
