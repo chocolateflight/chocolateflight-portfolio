@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Work_Sans } from '@next/font/google';
 
+import { useState } from 'react';
+
 import Menu from '../menu/Menu';
 
 import threelines from '../../public/icons/threelines.png';
@@ -27,8 +29,15 @@ export default function Top(props: Props) {
   let logoWidth = props.small ? 'w-[50px]' : 'w-[90px]';
   let polyText = props.small ? 'text-lg' : 'text-3xl';
 
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 w-full ${polyHeight}`}>
+      <Menu showMenu={showMenu} toggleMenu={toggleMenu} />
       <svg
         className='absolute top-0 w-full h-full'
         viewBox='0 0 100 100'
@@ -39,7 +48,8 @@ export default function Top(props: Props) {
       <Image
         src={threelines}
         alt='Three Lines'
-        className={`absolute top-0 bottom-0 right-5 my-auto mx-0 ${polyPad} ${polyWidth}`}
+        className={`absolute top-0 bottom-0 right-5 my-auto mx-0 cursor-pointer ${polyPad} ${polyWidth}`}
+        onClick={toggleMenu}
       />
 
       <div
@@ -51,7 +61,6 @@ export default function Top(props: Props) {
           Marc Hostettler
         </p>
       </div>
-      <Menu />
     </nav>
   );
 }
