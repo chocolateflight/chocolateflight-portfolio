@@ -1,6 +1,7 @@
-"use client"
+'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { Work_Sans } from '@next/font/google';
 
 import Menu from '../menu/Menu';
@@ -43,8 +44,12 @@ export default function Top(props: Props) {
 
       <div
         className={`flex justify-center items-center absolute top-0 bottom-0 left-2 my-auto mx-0 ${polyPad} ${polyHeight}`}>
-        <Image src={logo_b} alt='Logo' className={`${logoWidth} object-contain`} />
-        <p className={`${workSans.className} ${polyText} font-[700]`}>Marc Hostettler</p>
+        <Link href='/'>
+          <Image src={logo_b} alt='Logo' className={`${logoWidth} object-contain`} />
+        </Link>
+        <p className={`select-none ${workSans.className} ${polyText} font-[700]`}>
+          Marc Hostettler
+        </p>
       </div>
       <Menu />
     </nav>

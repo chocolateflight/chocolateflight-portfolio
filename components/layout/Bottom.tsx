@@ -1,6 +1,7 @@
-"use client"
+'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { Work_Sans } from '@next/font/google';
 
 import linkedin from '../../public/icons/linkedin.png';
@@ -27,7 +28,7 @@ export default function Bottom(props: Props) {
   let iconText = props.small ? 'text-[11px]' : 'text-[14px]';
 
   return (
-    <div className={`fixed bottom-0 left-0 right-0 w-full ${polyHeight}`}>
+    <div className={`select-none fixed bottom-0 left-0 right-0 w-full ${polyHeight}`}>
       <svg
         className='absolute w-full h-full'
         viewBox='0 0 100 100'
@@ -38,17 +39,22 @@ export default function Bottom(props: Props) {
       <div
         className={`absolute flex justify-center ${iconGap} top-[20px] bottom-0 left-0 right-0 my-auto mx-auto w-[80%] h-[60%]`}>
         <div className={`${iconFlex}`}>
-          <Image
-            src={linkedin}
-            alt='LinkedIn'
-            className={`${iconWidth} object-contain`}
-          />
+          <a href='https://www.linkedin.com/in/marc-hostettler'>
+            <Image
+              src={linkedin}
+              alt='LinkedIn'
+              className={`${iconWidth} object-contain`}
+            />
+          </a>
+
           <p className={`${workSans.className} ${iconText}`}>LinkedIn</p>
         </div>
 
         <div className={`${iconFlex}`}>
-          <Image src={letter} alt='Letter' className={`${iconWidth} object-contain`} />
-          <p className={`${workSans.className} ${iconText}`}>E-Mail</p>
+          <Link href='/contact'>
+            <Image src={letter} alt='Letter' className={`${iconWidth} object-contain`} />
+          </Link>
+          <p className={`${workSans.className} ${iconText}`}>Contact</p>
         </div>
       </div>
     </div>
