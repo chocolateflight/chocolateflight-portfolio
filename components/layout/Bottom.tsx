@@ -39,6 +39,12 @@ export default function Bottom(props: Props) {
       <div
         className={`absolute flex justify-center ${iconGap} top-[20px] bottom-0 left-0 right-0 my-auto mx-auto w-[80%] h-[60%]`}>
         <div className={`${iconFlex}`}>
+          <p
+            className={`${props.small ? 'hidden' : ''} ${
+              workSans.className
+            } ${iconText}`}>
+            LinkedIn
+          </p>
           <a href='https://www.linkedin.com/in/marc-hostettler'>
             <Image
               src={linkedin}
@@ -46,8 +52,12 @@ export default function Bottom(props: Props) {
               className={`${iconWidth} object-contain`}
             />
           </a>
-
-          <p className={`${workSans.className} ${iconText}`}>LinkedIn</p>
+          <p
+            className={`${props.small ? '' : 'hidden'} ${
+              workSans.className
+            } ${iconText}`}>
+            LinkedIn
+          </p>
         </div>
 
         <div className={`${iconFlex}`}>
