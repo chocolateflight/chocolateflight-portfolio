@@ -23,13 +23,13 @@ export default function Projects() {
               <Image
                 src={project.image}
                 alt='Tic Tac Toe'
-                className='rounded-md w-[60%]'
+                className='rounded-md md:w-[60%]'
               />
 
               <h3 className={`${workSans.className} font-bold`}>{project.title}</h3>
               <p className='text-xs'>{project.tools}</p>
 
-              <p className='text-center break-words hyphens-auto w-[60%]'>
+              <p className='text-center break-words hyphens-auto md:w-[60%]'>
                 {project.description}
               </p>
 

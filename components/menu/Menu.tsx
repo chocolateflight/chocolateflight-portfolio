@@ -16,17 +16,12 @@ export default function Menu(props: Props) {
     <div
       className={`${
         props.showMenu ? 'open' : ''
-      } menu absolute flex flex-col items-center top-[75px] left-0 w-full h-full bg-white h-[350px] pt-[25px] md:top-[105px] md:pt-[50px] md:h-[120px]`}>
+      } menu absolute flex flex-col items-center top-[75px] left-0 w-full h-full bg-white h-[250px] pt-[25px] md:top-[105px] md:pt-[50px] md:h-[120px]`}>
       <ul className='w-[30%] flex flex-col items-center md:flex-row md:justify-center md:gap-12 md:w-full'>
         <li
           className='cursor-pointer p-2 text-center text-lg hover:rounded-lg hover:bg-black hover:text-white'
           onClick={toggleMenu}>
           <Link href='/'>Home</Link>
-        </li>
-        <li
-          className='cursor-pointer p-2 text-center text-lg hover:rounded-lg hover:bg-black hover:text-white'
-          onClick={toggleMenu}>
-          <Link href='/about'>About</Link>
         </li>
         <li
           className='cursor-pointer p-2 text-center text-lg hover:rounded-lg hover:bg-black hover:text-white'

@@ -18,12 +18,12 @@ export default function Certificates() {
         <div className='grid grid-cols-1 gap-4 overflow-visible pt-2 md:grid-cols-2 md:max-w-[1100px] md:gap-y-8'>
           {certificates.map((certificate) => (
             <div className='flex flex-col gap-2 items-center text-white' key={certificate.id}>
-              <Image src={certificate.image} alt='Tic Tac Toe' className='rounded-md w-[60%]' />
+              <Image src={certificate.image} alt='Tic Tac Toe' className='rounded-md md:w-[60%]' />
 
               <h3 className={`${workSans.className} font-bold`}>{certificate.title}</h3>
               <p className='text-xs'>{certificate.issuer}</p>
 
-              <p className='text-center break-words hyphens-auto w-[60%]'>
+              <p className='text-center break-words hyphens-auto md:w-[60%]'>
                 {certificate.description}
               </p>
 
