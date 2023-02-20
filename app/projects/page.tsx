@@ -33,7 +33,7 @@ export default function Projects() {
                 {project.description}
               </p>
 
-              <a href={project.github} className='underline underline-offset-4'>
+              <a href={project.github} className='underline underline-offset-4 p-2 hover:rounded-lg hover:bg-white hover:text-black'>
                 GitHub
               </a>
             </div>

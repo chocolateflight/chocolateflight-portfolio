@@ -27,7 +27,7 @@ export default function Certificates() {
                 {certificate.description}
               </p>
 
-              <a href={certificate.verify} className='underline underline-offset-4'>
+              <a href={certificate.verify} className='underline underline-offset-4 p-2 hover:rounded-lg hover:bg-white hover:text-black'>
                 Verify Certificate
               </a>
             </div>
