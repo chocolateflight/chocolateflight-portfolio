@@ -6,6 +6,7 @@ import { Work_Sans } from '@next/font/google';
 
 import linkedin from '../../public/icons/linkedin.png';
 import letter from '../../public/icons/letter.png';
+import github from '../../public/icons/github.png';
 
 const workSans = Work_Sans({
   weight: ['400', '700'],
@@ -23,7 +24,7 @@ export default function Bottom(props: Props) {
   let iconGap = props.small ? 'gap-8' : 'gap-24';
   let iconFlex = props.small
     ? 'flex flex-col justify-center items-center'
-    : 'flex justify-center items-center gap-3';
+    : 'flex flex-col justify-center items-center gap-1';
   let iconWidth = props.small ? 'w-[30px]' : 'w-[40px]';
   let iconText = props.small ? 'text-[11px]' : 'text-[14px]';
 
@@ -39,30 +40,34 @@ export default function Bottom(props: Props) {
       <div
         className={`absolute flex justify-center ${iconGap} top-[20px] bottom-0 left-0 right-0 my-auto mx-auto w-[80%] h-[60%]`}>
         <div className={`${iconFlex}`}>
-          <p
-            className={`${props.small ? 'hidden' : ''} ${
-              workSans.className
-            } ${iconText}`}>
-            LinkedIn
-          </p>
           <a href='https://www.linkedin.com/in/marc-hostettler'>
             <Image
               src={linkedin}
               alt='LinkedIn'
-              className={`${iconWidth} object-contain`}
+              className={`${iconWidth} object-contain h-[25px] hover:scale-110`}
             />
           </a>
-          <p
-            className={`${props.small ? '' : 'hidden'} ${
-              workSans.className
-            } ${iconText}`}>
-            LinkedIn
-          </p>
+          <p className={`${workSans.className} ${iconText}`}>LinkedIn</p>
+        </div>
+
+        <div className={`${iconFlex}`}>
+          <a href='https://github.com/chocolateflight'>
+            <Image
+              src={github}
+              alt='Letter'
+              className={`${iconWidth} object-contain h-[25px] hover:scale-110`}
+            />
+          </a>
+          <p className={`${workSans.className} ${iconText}`}>GitHub</p>
         </div>
 
         <div className={`${iconFlex}`}>
           <Link href='/contact'>
-            <Image src={letter} alt='Letter' className={`${iconWidth} object-contain`} />
+            <Image
+              src={letter}
+              alt='Letter'
+              className={`${iconWidth} object-contain h-[25px] hover:scale-110`}
+            />
           </Link>
           <p className={`${workSans.className} ${iconText}`}>Contact</p>
         </div>
