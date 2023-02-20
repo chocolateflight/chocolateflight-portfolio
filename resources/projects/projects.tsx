@@ -1,9 +1,9 @@
-import aeropress from '../../public/images/aeropress-timer.png';
-import tictac from '../../public/images/tic-tac-toe.png';
-import todo from '../../public/images/to-do.png';
-import userSearch from '../../public/images/user-search-app.png';
-import portfolio from '../../public/images/portfolio.png';
-import fullstack from '../../public/images/fullstack.png';
+import aeropress from '../../public/images/img_aeropress-timer.png';
+import tictac from '../../public/images/img_tic-tac-toe.png';
+import todo from '../../public/images/img_to-do.png';
+import userSearch from '../../public/images/img_user-search-app.png';
+import portfolio from '../../public/images/img_portfolio.png';
+import fullstack from '../../public/images/img_fullstack.png';
 
 const projects = [
   {

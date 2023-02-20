@@ -1,9 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
-'use client';
-
 import Image from 'next/image';
-import portrait from '../public/images/portrait.jpg';
+import portrait from '../public/images/img_portrait.jpg';
 
 export default function Home() {
   return (

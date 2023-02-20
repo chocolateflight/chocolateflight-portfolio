@@ -9,7 +9,7 @@ import { useState } from 'react';
 import Menu from '../menu/Menu';
 
 import threelines from '../../public/icons/threelines.png';
-import logo_b from '../../public/icons/logo_b.png';
+import logo_b from '../../public/icons/logo_black.png';
 
 const workSans = Work_Sans({
   weight: ['400', '700'],

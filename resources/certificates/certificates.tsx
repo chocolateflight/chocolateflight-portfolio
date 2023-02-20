@@ -1,5 +1,5 @@
-import metaCertificate from '../../public/images/meta-certificate.png';
-import helsinkiCertificate from '../../public/images/helsinki-certificate.png';
+import metaCertificate from '../../public/images/img_meta-certificate.png';
+import helsinkiCertificate from '../../public/images/img_helsinki-certificate.png';
 
 const certificates = [
   {
