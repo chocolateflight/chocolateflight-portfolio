@@ -15,14 +15,14 @@ export default function Projects() {
   return (
     <main className='md:h-full'>
       <div className='h-full flex flex-col items-center justify-center'>
-        <div className='grid grid-cols-1 gap-4 overflow-visible pt-2 md:grid-cols-2 md:grid-rows-2 md:max-w-[1100px] md:gap-y-8'>
+        <section className='grid grid-cols-1 gap-4 overflow-visible pt-2 md:grid-cols-2 md:grid-rows-2 md:max-w-[1100px] md:gap-y-8'>
           {projects.map((project) => (
-            <div
+            <article
               className='flex flex-col gap-2 items-center text-white'
               key={project.id}>
               <Image
                 src={project.image}
-                alt='Tic Tac Toe'
+                alt={project.title}
                 className='rounded-md md:w-[60%]'
               />
 
@@ -33,12 +33,24 @@ export default function Projects() {
                 {project.description}
               </p>
 
-              <a href={project.github} className='underline underline-offset-4 p-2 hover:rounded-lg hover:bg-white hover:text-black'>
-                GitHub
-              </a>
-            </div>
+              <div className='flex justify-center items-center gap-2'>
+                <a
+                  href={project.github}
+                  className='underline underline-offset-4 p-2 hover:rounded-lg hover:bg-white hover:text-black'>
+                  GitHub
+                </a>
+
+                <a
+                  href={project.live}
+                  className={`${
+                    project.live ? 'block' : 'hidden'
+                  } underline underline-offset-4 p-2 hover:rounded-lg hover:bg-white hover:text-black`}>
+                  Live
+                </a>
+              </div>
+            </article>
           ))}
-        </div>
+        </section>
       </div>
     </main>
   );
