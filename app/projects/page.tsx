@@ -18,7 +18,7 @@ export default function Projects() {
         <section className='grid grid-cols-1 gap-4 overflow-visible pt-2 md:grid-cols-2 md:grid-rows-2 md:max-w-[1100px] md:gap-y-8'>
           {projects.map((project) => (
             <article
-              className='flex flex-col gap-2 items-center text-white'
+              className='flex flex-col gap-1 items-center text-white'
               key={project.id}>
               <Image
                 src={project.image}
@@ -27,7 +27,7 @@ export default function Projects() {
               />
 
               <h3 className={`${workSans.className} font-bold`}>{project.title}</h3>
-              <p className='text-xs'>{project.tools}</p>
+              <p className='text-xs text-center'>{project.tools}</p>
 
               <p className='text-center break-words hyphens-auto md:w-[60%]'>
                 {project.description}

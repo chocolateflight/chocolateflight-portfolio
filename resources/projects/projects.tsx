@@ -9,7 +9,7 @@ const projects = [
   {
     id: 0,
     title: 'Portfolio Website',
-    tools: 'Next.js 13 - TailwindCSS - Formik',
+    tools: 'Next.js 13 - TypeScript - TailwindCSS - Formik',
     description:
       'This portfolio website was built using Next.js 13. It is fully responsive and uses TailwindCSS for styling. The contact form uses Formik validation.',
     image: portfolio,
