@@ -40,7 +40,7 @@ export default function Contact() {
     <main className='md:h-full w-full'>
       <Modal closeModal={closeModal} showModal={showModal} />
       <div className='h-full flex flex-col items-center justify-center'>
-        <div className='flex flex-col items-center gap-4 overflow-visible w-full md:flex-row md:max-w-[900px]'>
+        <section className='flex flex-col items-center gap-4 overflow-visible w-full md:flex-row md:max-w-[900px]'>
           <form
             className='flex flex-col text-white w-full'
             onSubmit={formik.handleSubmit}>
@@ -100,7 +100,7 @@ export default function Contact() {
               Submit
             </button>
           </form>
-        </div>
+        </section>
       </div>
     </main>
   );

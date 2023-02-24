@@ -15,9 +15,9 @@ export default function Certificates() {
   return (
     <main className='md:h-full'>
       <div className='h-full flex flex-col items-center justify-center'>
-        <div className='grid grid-cols-1 gap-4 overflow-visible pt-2 md:grid-cols-2 md:max-w-[1100px] md:gap-y-8'>
+        <section className='grid grid-cols-1 gap-4 overflow-visible pt-2 md:grid-cols-2 md:max-w-[1100px] md:gap-y-8'>
           {certificates.map((certificate) => (
-            <div className='flex flex-col gap-2 items-center text-white' key={certificate.id}>
+            <article className='flex flex-col gap-2 items-center text-white' key={certificate.id}>
               <Image src={certificate.image} alt='Tic Tac Toe' className='rounded-md md:w-[60%]' />
 
               <h3 className={`${workSans.className} font-bold`}>{certificate.title}</h3>
@@ -30,9 +30,9 @@ export default function Certificates() {
               <a href={certificate.verify} className='underline underline-offset-4 p-2 hover:rounded-lg hover:bg-white hover:text-black'>
                 Verify Certificate
               </a>
-            </div>
+            </article>
           ))}
-        </div>
+        </section>
       </div>
     </main>
   );

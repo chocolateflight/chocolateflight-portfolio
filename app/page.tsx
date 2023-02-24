@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className='md:h-full'>
       <div className='h-full flex flex-col items-center justify-center'>
-        <div className='flex flex-col items-center gap-4 overflow-visible md:flex-row md:max-w-[1100px]'>
+        <section className='flex flex-col items-center gap-4 overflow-visible md:flex-row md:max-w-[1100px]'>
           <div className='flex flex-col items-center gap-4 md:justify-center'>
             <Image
               src={portrait}
@@ -15,7 +15,7 @@ export default function Home() {
               className='w-[180px] mt-4 rounded-full md:min-w-[300px]'
             />
           </div>
-          <div className='flex flex-col gap-2 md:items-start'>
+          <article className='flex flex-col gap-2 md:items-start'>
             <h1 className='text-2xl text-white text-center'>Welcome to my website!</h1>
             <p className='text-white text-justify text-[14px] break-words hyphens-auto md:mb-0 md:text-[16px]'>
               Hello and welcome! My name is Marc Hostettler and I am a 25-year-old
@@ -26,8 +26,8 @@ export default function Home() {
               experiences. Have a look around my site to see my CV and some of my recent
               projects. Let's connect!
             </p>
-          </div>
-        </div>
+          </article>
+        </section>
       </div>
     </main>
   );

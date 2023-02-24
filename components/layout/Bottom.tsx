@@ -29,7 +29,7 @@ export default function Bottom(props: Props) {
   let iconText = props.small ? 'text-[11px]' : 'text-[14px]';
 
   return (
-    <div className={`select-none fixed bottom-0 left-0 right-0 w-full ${polyHeight}`}>
+    <footer className={`select-none fixed bottom-0 left-0 right-0 w-full ${polyHeight}`}>
       <svg
         className='absolute w-full h-full'
         viewBox='0 0 100 100'
@@ -72,6 +72,6 @@ export default function Bottom(props: Props) {
           <p className={`${workSans.className} ${iconText}`}>Contact</p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

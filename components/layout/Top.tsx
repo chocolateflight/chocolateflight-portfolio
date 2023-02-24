@@ -36,7 +36,7 @@ export default function Top(props: Props) {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 w-full ${polyHeight}`}>
+    <header className={`fixed top-0 left-0 right-0 w-full ${polyHeight}`}>
       <Menu showMenu={showMenu} toggleMenu={toggleMenu} />
       <svg
         className='absolute top-0 w-full h-full'
@@ -64,6 +64,6 @@ export default function Top(props: Props) {
           Marc Hostettler
         </p>
       </div>
-    </nav>
+    </header>
   );
 }

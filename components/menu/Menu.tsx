@@ -13,7 +13,7 @@ export default function Menu(props: Props) {
     props.toggleMenu();
   };
   return (
-    <div
+    <nav
       className={`${
         props.showMenu ? 'open' : ''
       } menu absolute flex flex-col items-center top-[75px] left-0 w-full h-full bg-white h-[250px] pt-[25px] md:top-[105px] md:pt-[50px] md:h-[120px]`}>
@@ -39,6 +39,6 @@ export default function Menu(props: Props) {
           <Link href='/contact'>Contact</Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
