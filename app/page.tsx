@@ -21,10 +21,9 @@ export default function Home() {
               Hello and welcome! My name is Marc Hostettler and I am a 25-year-old
               Business Administration student and Organizational Development intern. With
               9 years of experience in various business roles, I have developed a passion
-              for continuous learning and growth. Recently, I have been teaching myself
+              for continuous learning and growth. In 2022, I have started teaching myself
               Web Development and am eager to apply my newfound skills and gain practical
-              experiences. Have a look around my site to see my CV and some of my recent
-              projects. Let's connect!
+              experiences. Have a look around my site to see some of my projects. Want to know more about myself? Visit my LinkedIn Profile, let's connect!
             </p>
           </article>
         </section>
